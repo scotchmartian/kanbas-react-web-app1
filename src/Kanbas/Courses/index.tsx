@@ -1,5 +1,4 @@
 import React from "react";
-import { ReactDOM } from "react";
 import CoursesNavigation from "./Navigation";
 import Modules from "./Modules";
 import Home from "./Home";

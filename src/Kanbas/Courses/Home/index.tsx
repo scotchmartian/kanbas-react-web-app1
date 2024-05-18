@@ -1,5 +1,4 @@
 import React from "react";
-import { ReactDOM } from "react";
 import Modules from "../Modules";
 import CourseStatus from "./Status";
 export default function Home() {

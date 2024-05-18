@@ -1,5 +1,4 @@
 import React from "react";
-import { ReactDOM } from "react";
 export default function Assignments() {
     return (
       <div id="wd-assignments">
@@ -16,8 +15,45 @@ export default function Assignments() {
               href="#/Kanbas/Courses/1234/Assignments/123">
               A1 - ENV + HTML
             </a>
+    
           </li>
+          <li className="wd-assignment-list-item"><b>Multiple Modules</b> | <b>Not Available Until</b> May 8th at 2:00pm | Due May 15th at 11:59pm | 100 pts
+            {/* Complete On Your Own */}
+          </li>
+        </ul>
+        <ul id="wd-assignment-list">
           <li className="wd-assignment-list-item">
+            <a className="wd-assignment-link"
+              href="#/Kanbas/Courses/1234/Assignments/123">
+              A2 - CSS + BOOTSTRAP
+            </a>
+    
+          </li> 
+          <li className="wd-assignment-list-item"><b>Multiple Modules</b> | <b>Not Available Until </b>May 16th at 2:00pm | <b>Due</b> May 22nd at 11:59pm | 100 pts
+            {/* Complete On Your Own */}
+          </li>
+        </ul>
+        <ul id="wd-assignment-list">
+          <li className="wd-assignment-list-item">
+            <a className="wd-assignment-link"
+              href="#/Kanbas/Courses/1234/Assignments/123">
+              A3 - JAVASCRIPT + REACT
+            </a>
+    
+          </li>
+          <li className="wd-assignment-list-item"><b>Multiple Modules</b> |<b> Not Available Until</b> May 23rd at 2:00pm | <b>Due</b> May 30th at 11:59pm | 100 pts
+            {/* Complete On Your Own */}
+          </li>
+        </ul>
+        <ul id="wd-assignment-list">
+          <li className="wd-assignment-list-item">
+            <a className="wd-assignment-link"
+              href="#/Kanbas/Courses/1234/Assignments/123">
+              A4 - MORE DIFFICULT STUFF THAT WILL HURT YOUR FEELINGS
+            </a>
+    
+          </li>
+          <li className="wd-assignment-list-item"><b>Multiple Modules</b> | <b>Not Available Until</b> May 31st at 2:00pm |<b>Due</b> June 6th at 11:59pm | 100 pts
             {/* Complete On Your Own */}
           </li>
         </ul>

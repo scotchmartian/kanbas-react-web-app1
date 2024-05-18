@@ -1,3 +1,4 @@
+import React from "react";
 export default function Lab1() {
     return (
       <div id="wd-lab1">
@@ -122,28 +123,29 @@ Your favorite books (in no particular order)
   <br />
   <img id="wd-starship"
     width="400px"
-   src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"
+   src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg" alt="stuff"
   />
   <br />
   Loading a local image:
   <br />
-  <img id="wd-teslabot" src="https://www.cnet.com/a/img/resize/0719946c55909866fecc568ab9abbdca8d846d16/hub/2021/08/20/c7483157-7676-4005-9899-b6c229715f8f/teslarobot1.png?auto=webp&fit=crop&height=675&width=1200" height="400px" />
+  <img id="wd-teslabot" src="/public/images/teslabot.jpg" alt="stuff"/>
 </div>
 <div id="wd-forms">
   <h4>Form Elements</h4>
   <form id="wd-text-fields">
     <h5>Text Fields</h5>
     <label htmlFor="wd-text-fields-username">Username:</label>
-    <input id="wd-text-fields-username" placeholder="jdoe" /> <br />
+    <input id="wd-text-fields-username" placeholder="SadGuyJim" /> <br />
     <label htmlFor="wd-text-fields-password">Password:</label>
     <input type="password" id="wd-text-fields-password" value="123@#$asd" />
     <br />
     <label htmlFor="wd-text-fields-first-name">First name:</label>
-    <input type="text" id="wd-text-fields-first-name" title="John" /> <br />
+    <input type="text" id="wd-text-fields-first-name" placeholder="Tingus McDingus"
+      value="Frederick" title=" The first name." /> <br />
     <label htmlFor="wd-text-fields-last-name">Last name:</label>
-    <input type="text" id="wd-text-fields-last-name" placeholder="Doe"
-      value="Wonderland" title="The last name" />
-    {/* copy rest of form elements here  */}
+    <input type="text" id="wd-text-fields-last-name" placeholder="Poopybutthead"
+      value="Lottamoney" title="The last name" />
+   
   </form>
   <h5>Text boxes</h5>
 <label>Biography:</label><br/>
