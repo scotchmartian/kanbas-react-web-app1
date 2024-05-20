@@ -1,9 +1,47 @@
 import React from "react";
+import { MdDoNotDisturbAlt } from "react-icons/md";
+import { FaCheckCircle } from "react-icons/fa";
+import { BiImport } from "react-icons/bi";
+import { LiaFileImportSolid } from "react-icons/lia";
+import { CiSearch } from "react-icons/ci";
+import LessonControlButtons from "../Modules/LessonControlButtons";
+import ModuleControlButtons from "../Modules/ModuleControlButtons"; 
 export default function Assignments() {
     return (
-      <div id="wd-assignments">
-        <input id="wd-search-assignment"
+      <div id="wd-course-status" style={{ width: "300px" }}>
+      <input id="wd-search-assignment"
                placeholder="Search for Assignments" />
+              <h2>Assignments</h2>
+      <div className="d-flex">
+        <div className="w-50 pe-1">
+          <button className="btn btn-lg btn-secondary w-100 text-nowrap ">
+            <MdDoNotDisturbAlt className="me-2 fs-5" />
+            Unpublish
+          </button>
+        </div>
+        <div className="w-50">
+          <button className="btn btn-lg btn-success w-100">
+            <FaCheckCircle className="me-2 fs-5" />
+            Publish
+          </button>
+        </div>
+      </div>
+      <br />
+      <button className="btn btn-lg btn-secondary w-100 mt-1 text-start">
+        <BiImport className="me-2 fs-5" />
+        Import Existing Content
+      </button>
+      <button className="btn btn-lg btn-secondary w-100 mt-1 text-start">
+        <LiaFileImportSolid className="me-2 fs-5" />
+        Import from Commons
+      </button>
+      
+    </div>
+  );
+}
+
+      <div id="wd-assignments" style={{ width: "300px" }}>
+        
         <button id="wd-add-assignment-group">+ Group</button>
         <button id="wd-add-assignment">+ Assignment</button>
         <h3 id="wd-assignments-title">
@@ -58,5 +96,5 @@ export default function Assignments() {
           </li>
         </ul>
       </div>
-  );}
+ 
   

@@ -128,7 +128,7 @@ Your favorite books (in no particular order)
   <br />
   Loading a local image:
   <br />
-  <img id="wd-teslabot" src="/public/images/teslabot.jpg" alt="stuff"/>
+  <img id="wd-teslabot" src="/images/teslabot.jpg" alt="stuff"/>
 </div>
 <div id="wd-forms">
   <h4>Form Elements</h4>
