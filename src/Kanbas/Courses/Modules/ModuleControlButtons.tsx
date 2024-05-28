@@ -7,6 +7,6 @@ export default function ModuleControlButtons() {
     <div className="float-end">
       <GreenCheckmark />
       <IoEllipsisVertical className="fs-4" />
-      <FaPlus />
+      <FaGripVertical />
     </div>
 );}
