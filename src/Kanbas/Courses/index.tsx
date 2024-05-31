@@ -6,7 +6,6 @@ import CoursesNavigation from "./Navigation";
 import Modules from "./Modules";
 import Home from "./Home";
 import { Navigate, Route, Routes, useParams, useLocation} from "react-router";
-
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/Editor";
 export default function Courses() {

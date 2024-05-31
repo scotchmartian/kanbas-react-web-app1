@@ -1,4 +1,4 @@
-function ImpliedReturns() {
+export default function ImpliedReturns() {
     function divide(a: number,b: number) {
         return a/b;
     }
