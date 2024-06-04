@@ -7,7 +7,7 @@ import Home from "./Home";
 import { Navigate, Route, Routes, useParams, useLocation} from "react-router";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/Editor";
-export default function Courses({ Courses}; {courses: any[]; }) {
+export default function Courses({courses}: {courses: any[]; }) {
   const { cid } = useParams();
   const course = courses.find((course) => course._id === cid);
   const { pathname } = useLocation();
@@ -32,7 +32,6 @@ export default function Courses({ Courses}; {courses: any[]; }) {
           </div>
     </div>
   );
-  export default Courses;
 }
 
 
