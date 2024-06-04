@@ -1,5 +1,4 @@
 import React from "react";
-// import { courses, modules, assignments, users, enrollments, grades } from "../../Kanbas/Database";
 import db from "../../Kanbas/Database"
 import { FaAlignJustify } from 'react-icons/fa'; 
 import CoursesNavigation from "./Navigation";
@@ -8,9 +7,9 @@ import Home from "./Home";
 import { Navigate, Route, Routes, useParams, useLocation} from "react-router";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/Editor";
-export default function Courses() {
+export default function Courses({ Courses}; {courses: any[]; }) {
   const { cid } = useParams();
-  const course = db.courses.find((course) => course._id === cid);
+  const course = courses.find((course) => course._id === cid);
   const { pathname } = useLocation();
   return (
     <div id="wd-courses">
@@ -33,6 +32,7 @@ export default function Courses() {
           </div>
     </div>
   );
+  export default Courses;
 }
 
 
