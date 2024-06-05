@@ -1,5 +1,5 @@
 import React from "react";
-import db from "../../Kanbas/Database"
+import db from "../Database"
 import { FaAlignJustify } from 'react-icons/fa'; 
 import CoursesNavigation from "./Navigation";
 import Modules from "./Modules";

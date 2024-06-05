@@ -50,8 +50,8 @@ export default function ModulesControls(
           </li>
         </ul>
       </div>
-      {/* Implement the View Progress and Collapse All buttons
-          with IDs wd-view-progress and wd-collapse-all */}
+      <ModuleEditor dialogTitle="Add Module" moduleName={moduleName}
+                    setModuleName={setModuleName} addModule={addModule} />
     </div>
   );
 }
