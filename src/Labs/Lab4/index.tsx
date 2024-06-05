@@ -1,5 +1,5 @@
 import React from "react";
-import ReduxExamples from "./ReduxExamples";
+import ReduxExamples from "./reduxExamples";
 import PassingFunctions from "./PassingFunctions";
 import ParentStateComponent from "./ParentStateComponent";
 import Counter from "./Counter";
