@@ -11,22 +11,21 @@ export default function Lab4() {
     alert("Hello");
   }
   return (
-    <>
-    <h2> Lab 4</h2>
-  
 
     <div id="wd-passing-functions">
-      <ClickEvent/>
-      <PassingDataOnEvent/>
       <h2>Lab 4</h2>
-      ...
+    
+
       <PassingFunctions theFunction={sayHello} />
       <ParentStateComponent/>
+
+      
       <Counter/>
+      
+      <ClickEvent/>
+      <PassingDataOnEvent/>
       <EventObject/>
       <ReduxExamples/>
-
-    </div>
-    </>
+      </div>
   );
 }

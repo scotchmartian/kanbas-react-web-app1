@@ -33,7 +33,7 @@ import Highlight from "./Highlight";
 import ArrayIndexAndLength from "./ArrayIndexAndLength";
 import AddPathParameters from "./AddPathParameters";
 import PathParameters from "./PathParameters";
-import { UseSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 
 export default function Lab3() {
