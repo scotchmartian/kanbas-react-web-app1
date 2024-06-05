@@ -6,7 +6,7 @@ import Counter from "./Counter";
 import EventObject from "./EventObject";
 import PassingDataOnEvent from "./PassingDataOnEvent";
 import ClickEvent from "./ClickEvent";
-import ReduxExamples from "./reduxExamples";
+import ReduxExamples from "./ReduxExamples";
 export default function Lab4() {
   function sayHello() {
     alert("Hello");
