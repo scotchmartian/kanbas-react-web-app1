@@ -1,23 +1,46 @@
-import { addModule, editModule, updateModule, deleteModule } from "./reducer";
+import { setModules, addModule, findModulesForCourse, editModule, updateModule, deleteModule } from "./reducer";
 import { useSelector, useDispatch } from "react-redux";
 import { useParams } from "react-router";
 import db from "../../Database";
 import ModulesControls from "./ModuleControls";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import * as client from "./client";
 import ModuleControlButtons from "./ModuleControlButtons";
 
 export default function Modules() {
-  const { cid } = useParams();
+  const removeModule = async (moduleId: string) => {
+    await client.deleteModule(moduleId);
+    dispatch(deleteModule(moduleId));
+  };
+const { cid } = useParams();
+  const dispatch = useDispatch();
+  const createModule = async (module: any) => {
+    const newModule = await client.createModule(cid as string, module);
+    dispatch(addModule(newModule));
+  };
+const fetchModules = async () => {
+    const modules = await client.findModulesForCourse(cid as string);
+    dispatch(setModules(modules));
+  };
+  useEffect(() => {
+    fetchModules();
+  }, []);
+  const saveModule = async (module: any) => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
+
   const { modules } = useSelector((state: any) => state.modulesReducer);
   const [moduleName, setModuleName] = useState("");
-  const dispatch = useDispatch();
+  
   return (
     <div id="wd-modules">
       <ModulesControls
-        setModuleName={setModuleName}
+        
         moduleName={moduleName}
+        setModuleName={setModuleName}
         addModule={() => {
-          dispatch(addModule({ name: moduleName, course: cid }));
+          createModule({ name: moduleName, course: cid });
           setModuleName("");
         }}
       />{" "}
@@ -52,9 +75,7 @@ export default function Modules() {
 
                 <ModuleControlButtons
                   moduleId={module._id}
-                  deleteModule={(moduleId) => {
-                    dispatch(deleteModule(moduleId));
-                  }}
+                  deleteModule={(moduleId) => {removeModule(moduleId); }}
                   editModule={(moduleId) => dispatch(editModule(moduleId))}
                 />
               </div>

@@ -1,0 +1,28 @@
+{
+  "name": "kanbas_node_srvr_rsm",
+  "version": "1.0.0",
+  "description": "node.js http web server for kanbas apps ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scotchmartian/kanbas-react-web-app1.git"
+  },
+  "keywords": [
+    "node",
+    "rest",
+    "server",
+    "http",
+    "webdev",
+    "web",
+    "development"
+  ],
+  "author": "Dat Boi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scotchmartian/kanbas-react-web-app1/issues"
+  },
+  "homepage": "https://github.com/scotchmartian/kanbas-react-web-app1#readme"
+}
